@@ -14,7 +14,7 @@ TIMEZONE = 'Asia/Shanghai'
 DEFAULT_LANG = u'en'
 
 #################### 配置elegant主题
-LANDING_PAGE_ABOUT={'title':'You can you up, no can no bibi','details':'You can write up your own About me section using LANDING_PAGE_ABOUT variable in your configuration. It is a dictionary that has two keys title and details. Value of title is displayed in the header of the home page, like in the above example it is “I design and build software products for iOS and OSX”. details is the text that appears under “About me” heading.'}
+LANDING_PAGE_ABOUT={'title':'You can you up, no can no bibi','details':'专注IT，品味生活，做一个有思想的人！<br/>大家好，我是刘伟，一个赶上80后末班车的屌丝男，一个被镜片压着鼻梁的眼镜男，一个成家还没有立业的已婚男。很显然，我是一名程序员，闲暇之余喜欢K歌，骑车等。'}
 PROJECTS = [{
     'name': 'EXCEL TOOL',
     'url': 'https://github.com/liuweicode/EXCELTOOL',

@@ -1,11 +1,8 @@
 Title: Ubuntu 通过ipv4转ipv6上网 
 Date: 2012-12-04 05:45
-Modified: 2012-12-04 05:45
 Category: Ubuntu
 Tags: ubuntu, ipv6, ipv4
-Slug: connect-with-ipv6-on-ubuntu
 Authors: liuwei
-Summary: Ubuntu 通过ipv4转ipv6上网
 
 	sudo apt-get install miredo
 	sudo gedit /etc/hosts

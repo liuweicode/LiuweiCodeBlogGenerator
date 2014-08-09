@@ -1,11 +1,8 @@
 Title: 用poi将Excel数据导入数据库/java tools.jar动态类的生成
 Date: 2009-12-28 12:28
-Modified: 2009-12-28 12:28
 Category: Java
 Tags: poi, java
-Slug: import-database-from-excel-use-java-poi
 Authors: Liuwei
-Summary: Short version for index and feeds
 
 由于公司对于Excel的导入导出用的比较多，因此这两天想写一个导入导出的小程序，方便以后使用，对于Excel的操作，本人使用的是poi，poi操作Excel非常方便，但有个缺点，对于Excel单元格的格式，poi在org.apache.poi.hssf.usermodel.HSSFCell中定义，大致包括以下几种类型：
 

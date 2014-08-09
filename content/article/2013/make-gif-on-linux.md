@@ -1,11 +1,8 @@
 Title: Linux 下制作Gif动画 
 Date: 2013-02-01 10:11
-Modified: 2013-02-01 10:11
 Category: Linux
 Tags: ubuntu, ffmpeg, gif
-Slug: make-gif-on-linux
 Authors: liuwei
-Summary: Linux 下制作Gif动画
 
 1,首先使用ffmpeg将视频转换成帧图片
 

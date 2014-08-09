@@ -1,11 +1,8 @@
 Title: 关于友善之臂 Tiny6410无法加载libfriendlyarm-hardware.so的问题
 Date: 2012-12-05 09:07
-Modified: 2012-12-05 09:07
 Category: Java
 Tags: java, friendlyarm
-Slug: friendlyarm-tiny6410-can-not-load-so-library
 Authors: liuwei
-Summary: Short version for index and feeds
 
 adb logcat 信息日志如下：
 D/dalvikvm( 4534): No JNI_OnLoad found in /system/lib/libfriendlyarm-hardware.so 0x40712ca8, skipping init

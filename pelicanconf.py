@@ -6,8 +6,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'liuwei'
 SITENAME = u'Liuwei code'
-SITEURL = 'http://localhost:8000'
-#SITEURL = 'http://liuwei.co'
+#SITEURL = 'http://localhost:8000'
+SITEURL = 'http://liuwei.co'
 
 PATH = 'content'
 #模版主题 http://oncrashreboot.com/elegant-best-pelican-theme-features
@@ -112,7 +112,7 @@ LINKS = (
 
 STATIC_PATHS = ['static']
 
-DEFAULT_PAGINATION = 2
+#DEFAULT_PAGINATION = 2
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True

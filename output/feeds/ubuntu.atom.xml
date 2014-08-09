@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Liuwei code</title><link href="http://liuwei.co/" rel="alternate"></link><link href="http://liuwei.co/feeds/ubuntu.atom.xml" rel="self"></link><id>http://liuwei.co/</id><updated>2012-12-04T05:45:00+08:00</updated><entry><title>Ubuntu 通过ipv4转ipv6上网</title><link href="http://liuwei.co/posts/2012/12/connect-with-ipv6-on-ubuntu.html" rel="alternate"></link><updated>2012-12-04T05:45:00+08:00</updated><author><name>liuwei</name></author><id>tag:liuwei.co,2012-12-04:posts/2012/12/connect-with-ipv6-on-ubuntu.html</id><summary type="html">&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;miredo&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;gedit&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;hosts&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;将如下网址的内容粘贴进去：&lt;a href="https://ipv6-hosts.googlecode.com/hg/hosts"&gt;https://ipv6-hosts.googlecode.com/hg/hosts&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;gedit&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;ufw&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;修改：IPV6=yes
+重启防火墙&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ufw&lt;/span&gt; &lt;span class="n"&gt;disable&lt;/span&gt;
+&lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;ufw&lt;/span&gt; &lt;span class="n"&gt;enable&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;参考：&lt;a href="https://wiki.ubuntu.com/IPv6#Get_connected_with_Miredo"&gt;https://wiki.ubuntu.com/IPv6#Get_connected_with_Miredo&lt;/a&gt;&lt;/p&gt;</summary><category term="ubuntu"></category><category term="ipv6"></category><category term="ipv4"></category></entry></feed>

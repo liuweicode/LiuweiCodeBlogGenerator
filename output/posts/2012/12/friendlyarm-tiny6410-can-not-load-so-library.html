@@ -21,6 +21,7 @@
         <link rel="apple-touch-icon" sizes="144x144" href="http://liuwei.co/theme/images/apple-touch-icon-144x144.png" />
         <link rel="icon" href="http://liuwei.co/theme/images/apple-touch-icon-144x144.png" />
         <link href="http://liuwei.co/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Liuwei code - Full Atom Feed" />
+        <link href="http://liuwei.co/feeds/Android.atom.xml" type="application/atom+xml" rel="alternate" title="Liuwei code - Android Category Atom Feed" />
         <link href="http://liuwei.co/feeds/Java.atom.xml" type="application/atom+xml" rel="alternate" title="Liuwei code - Java Category Atom Feed" />
         <link href="http://liuwei.co/feeds/Linux.atom.xml" type="application/atom+xml" rel="alternate" title="Liuwei code - Linux Category Atom Feed" />
         <link href="http://liuwei.co/feeds/phonegap.atom.xml" type="application/atom+xml" rel="alternate" title="Liuwei code - phonegap Category Atom Feed" />
@@ -64,16 +65,20 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
 
-            <p>adb logcat 信息日志如下：
-D/dalvikvm( 4534): No JNI_OnLoad found in /system/lib/libfriendlyarm-hardware.so 0x40712ca8, skipping init</p>
-<p>日志信息提示在/system/lib下找不到libfriendlyarm-hardware.so文件，于是我到/system/lib目录下进行查看：
-liuwei@IT:~/下载$ adb shell
-/ # ls /system/lib | grep libfriendlyarm-hardware.so
-libfriendlyarm-hardware.so</p>
+            <p>adb logcat 信息日志如下：</p>
+<p>D/dalvikvm( 4534): No JNI_OnLoad found in /system/lib/libfriendlyarm-hardware.so 0x40712ca8, skipping init</p>
+<p>日志信息提示在/system/lib下找不到libfriendlyarm-hardware.so文件，于是我到/system/lib目录下进行查看：</p>
+<div class="highlight"><pre><span class="n">liuwei</span><span class="err">@</span><span class="n">IT</span><span class="o">:~/</span><span class="err">下载$</span> <span class="n">adb</span> <span class="n">shell</span>
+<span class="o">/</span> <span class="err">#</span> <span class="n">ls</span> <span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">lib</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">libfriendlyarm</span><span class="o">-</span><span class="n">hardware</span><span class="p">.</span><span class="n">so</span>
+<span class="n">libfriendlyarm</span><span class="o">-</span><span class="n">hardware</span><span class="p">.</span><span class="n">so</span>
+</pre></div>
+
+
 <p>明明这个文件啊，于是我将该文件pull到本地，放到当前的工程的libs/armeabi下，启动之后，还是报错。
 最后网上查了很久，原来友善之臂提供的是静态库，路径必须按照指定的来。也就是说，HardwareControler.java这个文件必须在com.friendlyarm.AndroidSDK的包下...</p>
 <p>修改之，继续运行，logcat依旧报这个错，但是程序能成功加载libfriendlyarm-hardware.so库了，不知到这是什么原因？</p>
-<p>下面是友善之臂 Tiny6410对串口的操作类：完整Deno源码在：http://download.csdn.net/detail/william548934/4854745</p>
+<p>下面是友善之臂 Tiny6410对串口的操作类：</p>
+<p>完整Deno源码在：http://download.csdn.net/detail/william548934/4854745</p>
 <div class="highlight"><pre><span class="nx">package</span> <span class="nx">co.liuwei</span><span class="p">;</span>
 
 <span class="k">import</span> <span class="nx">java.util.ArrayList</span><span class="p">;</span>
@@ -439,7 +444,7 @@ var duoshuoQuery = {short_name:"liuweicode"};
                     <span>1</span>
 </a></li>
                 <li><a href="/tags.html#java-ref">java
-                    <span>2</span>
+                    <span>4</span>
 </a></li>
             </ul>
 

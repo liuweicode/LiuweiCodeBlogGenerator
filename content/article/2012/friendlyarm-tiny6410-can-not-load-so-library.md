@@ -5,19 +5,23 @@ Tags: java, friendlyarm
 Authors: liuwei
 
 adb logcat 信息日志如下：
+
 D/dalvikvm( 4534): No JNI_OnLoad found in /system/lib/libfriendlyarm-hardware.so 0x40712ca8, skipping init
 
 日志信息提示在/system/lib下找不到libfriendlyarm-hardware.so文件，于是我到/system/lib目录下进行查看：
-liuwei@IT:~/下载$ adb shell
-/ # ls /system/lib | grep libfriendlyarm-hardware.so
-libfriendlyarm-hardware.so
+
+	liuwei@IT:~/下载$ adb shell
+	/ # ls /system/lib | grep libfriendlyarm-hardware.so
+	libfriendlyarm-hardware.so
 
 明明这个文件啊，于是我将该文件pull到本地，放到当前的工程的libs/armeabi下，启动之后，还是报错。
 最后网上查了很久，原来友善之臂提供的是静态库，路径必须按照指定的来。也就是说，HardwareControler.java这个文件必须在com.friendlyarm.AndroidSDK的包下...
 
 修改之，继续运行，logcat依旧报这个错，但是程序能成功加载libfriendlyarm-hardware.so库了，不知到这是什么原因？
 
-下面是友善之臂 Tiny6410对串口的操作类：完整Deno源码在：http://download.csdn.net/detail/william548934/4854745
+下面是友善之臂 Tiny6410对串口的操作类：
+
+完整Deno源码在：http://download.csdn.net/detail/william548934/4854745
 
 	package co.liuwei;
 	

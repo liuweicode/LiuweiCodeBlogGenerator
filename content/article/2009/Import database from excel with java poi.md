@@ -16,7 +16,9 @@ Authors: Liuwei
 因此在读取Excel中整数的时候，读取上来会出现“.0”的情况，查了资料，也csdn发帖，最后还是需要程序处理，不知道哪位高手有更好的办法。这也许是poi的一个bug吧.
 
 下面是我写的一个导入数据库的例子程序：
+
 完整源码请查看：https://github.com/czzl/EXCELTOOL
+
 首先是配置文件config.xml
 
 	<?xml version=”1.0″ encoding=”UTF-8″ ?>

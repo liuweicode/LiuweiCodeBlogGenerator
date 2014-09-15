@@ -26,7 +26,7 @@ Authors: liuwei
 	liuwei@IT:~/make gif/temp$ ls | grep *.gif
 	test.gif
 	
-![Mou icon](http://liuwei.co/static/images/test_make_git_on_ubuntu.gif)
+![Mou icon](../../static/images/test_make_git_on_ubuntu.gif)
 
 	
 参考：

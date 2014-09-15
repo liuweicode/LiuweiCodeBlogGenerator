@@ -18,7 +18,7 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 #使用文件名作为文章或页面的slug（url）
 FILENAME_METADATA = '(?P<slug>.*)'
 #页面的显示路径和保存路径，推荐下面的方式
-ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_SAVE_AS = ARTICLE_URL
 
 #YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
@@ -42,6 +42,7 @@ TEMPLATE_PAGES = {
     "tags.html": "tags.html",
     "links.html": "links.html",
 }
+
 
 #################### 配置elegant主题
 LANDING_PAGE_ABOUT={'title':'专注移动互联网，品味生活，做一个有思想的人！','details':'\
@@ -117,6 +118,9 @@ LINKS = (
 #          ('Another social link', '#'),)
 
 STATIC_PATHS = ['static']
+#EXTRA_PATH_METADATA = {
+#    'static/*': {'path': 'posts/static/*'},
+#}
 
 #DEFAULT_PAGINATION = 2
 

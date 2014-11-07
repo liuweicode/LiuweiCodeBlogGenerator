@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 #详细配置查看 http://docs.getpelican.com/en/3.4.0/settings.html
 
 AUTHOR = u'liuwei'
-SITENAME = u'Liuwei code'
+SITENAME = u'刘伟博客'
 #SITEURL = 'http://localhost:8000'
 SITEURL = 'http://liuwei.co'
 
@@ -33,6 +33,7 @@ TAG_SAVE_AS = TAG_URL
 TAGS_URL = 'tags.html'
 TAGS_SAVE_AS = 'tags.html'
 
+RECENT_ARTICLES_COUNT = 20
 
 DEFAULT_LANG = u'en'
 
@@ -45,38 +46,22 @@ TEMPLATE_PAGES = {
 
 
 #################### 配置elegant主题
-LANDING_PAGE_ABOUT={'title':'专注移动互联网，品味生活，做一个有思想的人！','details':'\
-                                            <a href="http://weibo.com/u/3517080141?s=6uyXnP" target="_blank"><img border="0" src="http://service.t.sina.com.cn/widget/qmd/3517080141/93b4ea1e/1.png"/></a>\
-                                            <br/><br/>大家好，我是刘伟，江苏<a href="http://baike.baidu.com/view/1136052.htm?from_id=14497&type=syn&fromtitle=宝应&fr=aladdin" target="_blank">宝应</a>人，爱好K歌，骑行。我是一个赶上80后末班车的屌丝男，一个被塑料压着鼻梁的眼镜男，一个成家还没有立业的已婚男。很显然，我还是一名IT男，因为热爱和坚持，我走到了今天，我相信，即使将来有一天IT不再是我挣钱的职业了，我也会继续走下去...\
-                                            <br/><br/><img src="theme/icons/github.png"/>&nbsp;<a href="https://github.com/liuweicode" target="_blank">Github</a> \
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<img src="theme/icons/stackoverflow.png"/>&nbsp;<a href="https://stackoverflow.com/users/2968376/liu-wei" target="_blank">Stackoverflow</a> \
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<img src="theme/icons/twitter.png"/>&nbsp;<a href="https://twitter.com/liuweisays" target="_blank">Twitter</a> \
-                                            &nbsp;&nbsp;&nbsp;&nbsp;<img src="theme/icons/facebook.png"/>&nbsp;<a href="https://www.facebook.com/profile.php?id=100008004043961" target="_blank">Facebook</a>'}
+LANDING_PAGE_ABOUT={'title':'品味老歌 感动生活 记录每个值得记忆的瞬间！','details':'\
+                                           大家好，我是刘伟，江苏<a href="http://baike.baidu.com/view/1136052.htm?from_id=14497&type=syn&fromtitle=宝应&fr=aladdin" target="_blank">宝应</a>人，爱好K歌，骑行。我是一个赶上80后末班车的屌丝男，一个被塑料压着鼻梁的眼镜男，一个成家还没有立业的已婚男。'
+                                           }
+
+
+
 PROJECTS = [
                         {
-                        'name': 'MonkeyRunner Tool',
-                        'url': 'https://github.com/liuweicode/MonkeyRunnerTool',
-                        'description': 'Android自动化测试，配置xml模拟一系列点击，拖动，长按等动作。'
+                        'name': '结婚一周年纪念日',
+                        'url': 'http://v.youku.com/v_show/id_XNjE2MDExNzA4.html',
+                        'description': 'http://v.youku.com/v_show/id_XNjE2MDExNzA4.html'
                         },
                         {
-                        'name': 'Weather Effects Demo',
-                        'url': 'https://github.com/liuweicode/WeatherEffectsDemo',
-                        'description': 'cocos2dx编写的天气效果，在ios和android平台上测试通过。'
-                        },
-                        {
-                        'name': 'Base Project',
-                        'url': 'https://github.com/liuweicode/BaseProject',
-                        'description': '自定义类库，集成网络请求，错误日志邮件，以及一些自定义组件等，可以加速Android开发。'
-                        },
-                        {
-                        'name': 'Page Curl Widget',
-                        'url': 'https://github.com/liuweicode/PageCurlWidget',
-                        'description': 'Android仿ios地图的半翻页效果组件'
-                        },
-                        {
-                        'name': 'EXCEL TOOL',
-                        'url': 'https://github.com/liuweicode/EXCELTOOL',
-                        'description': '通过xml映射数据库表、数据表列，再通过poi将Excel中的数据导入到数据库中。'
+                        'name': '结婚两周年纪念日',
+                        'url': 'http://v.youku.com/v_show/id_XNzk0NDQ1ODI0.html',
+                        'description': 'http://v.youku.com/v_show/id_XNzk0NDQ1ODI0.html'
                         }
                     ]
 
